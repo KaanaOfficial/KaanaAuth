@@ -1,0 +1,47 @@
+name: docs
+
+# define the trigger 
+on: [push, pull_request]
+
+jobs:
+  docs:
+    runs-on: ${{ matrix.os }}
+    env:
+      # We used "docs" as directory name for our documentation, we will be referencing this later
+      working-directory: docs
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [14]
+
+    steps:
+      # Check out master branch
+      - name: Checkout
+        uses: actions/checkout@master
+
+      # Downloads, configures and caches Node.js
+      - name: Setup node env
+        uses: actions/setup-node@v2.1.4
+        with:
+          node-version: ${{ matrix.node }}
+
+      # Install all dependencies needed to build our documentation
+      - name: Install dependencies
+        # Referencing our docs directory here
+        working-directory: ${{env.working-directory}}
+        run: yarn
+
+      # The generate command is used to invoke Nuxt static site generation
+      - name: Generate
+        working-directory: ${{env.working-directory}}
+        run: yarn run generate
+
+      # Pushes the files to a branch called "gh-pages" that will be used as deployment branch
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          # This token is automatically invoked
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Nuxt export the statically generated files in the dist directory by default
+          publish_dir: ./${{env.working-directory}}/dist

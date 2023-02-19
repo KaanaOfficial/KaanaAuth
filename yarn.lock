@@ -284,6 +284,13 @@
   dependencies:
     mime "^3.0.0"
 
+"@doubco/countries@^1.1.9":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@doubco/countries/-/countries-1.1.9.tgz#f98be77144232affcccee35c8ec89b4c78a06c29"
+  integrity sha512-OrwMbAF/OGHN5rIIs/4vDKiBudXy4s6s9vgIz/pxq4ckENNx7Vcc9jC/rqUVnTfVRwuNOTkJYEqVaCVLdkNjEw==
+  dependencies:
+    graphql-tag "^2.11.0"
+
 "@esbuild/android-arm64@0.16.17":
   version "0.16.17"
   resolved "https://registry.yarnpkg.com/@esbuild/android-arm64/-/android-arm64-0.16.17.tgz#cf91e86df127aa3d141744edafcba0abdc577d23"
@@ -2582,6 +2589,13 @@ graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4, 
   version "4.2.10"
   resolved "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.10.tgz"
   integrity sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
+
+graphql-tag@^2.11.0:
+  version "2.12.6"
+  resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.12.6.tgz#d441a569c1d2537ef10ca3d1633b48725329b5f1"
+  integrity sha512-FdSNcu2QQcWnM2VNvSCCDCVS5PpPqpzgFT8+GXzqJuoDd0CBncxCY278u4mhRO7tMgo2JjgJA5aZ+nWSQ/Z+xg==
+  dependencies:
+    tslib "^2.1.0"
 
 gzip-size@^7.0.0:
   version "7.0.0"
