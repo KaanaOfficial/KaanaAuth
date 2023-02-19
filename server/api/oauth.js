@@ -1,3 +1,6 @@
+//import { useSupabaseClient } from "#supabase/server";
+//const supabase = useSupabaseClient();
+//const loading = ref(false);
 export default defineEventHandler(async (event) => {
     loading.value = true;
     try {
