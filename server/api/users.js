@@ -1,10 +1,10 @@
-import { createPinia } from "pinia";
-
-const pinia = createPinia();
-
-export default defineEventHandler(async (event) => {
-  const usersStore = useAuthStore();
-  const users = usersStore.getUsers();
-
-  return { users };
+import { serverSupabaseClient } from "#supabase/server";
+export default eventHandler(async (event) => {
+  const client = serverSupabaseClient(event);
+  const { data } = await client
+    .from("profiles")
+    .select()
+    .order("id", { ascending: false });
+  return { users: data };
 });
+
