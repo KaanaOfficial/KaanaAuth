@@ -28,6 +28,7 @@ To get started with Mention by Kaana, follow these steps:
 2. Navigate to the project directory using `cd Mention`
 3. Install the dependencies using `yarn install`
 4. Start the development server using `yarn run dev`
+5. Remove '.example' from '.env.example' file.
 
 ## 🤝 Contributing
 We welcome contributions from the community! If you have an idea for a new feature or have found a bug, please open an issue in this repository. If you would like to contribute code, please fork this repository and create a pull request with your changes.
