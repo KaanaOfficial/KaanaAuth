@@ -5,7 +5,7 @@ export default defineEventHandler(async (event) => {
     loading.value = true;
     try {
         const { error, users } = await supabase.auth.signInWithOAuth({
-            provider: 'github',
+            provider: 'google',
         });
         if (error) throw error;
         console.log("Successfully signing in with Google!");
