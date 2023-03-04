@@ -8,7 +8,7 @@ const supabase = createClient(supabaseUrl, supabaseKey)
 
 
 export default eventHandler(async (event) => {
-  const { data: users, error } = await supabase.auth.getUser(jwttoken)
+  const { users, error } = await supabase.auth.getUser()
   if (error) {
     console.error(error)
     return {

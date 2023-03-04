@@ -22,6 +22,8 @@
   "dependencies": {
     "@doubco/countries": "^1.1.9",
     "@pinia/nuxt": "^0.4.6",
+    "@supabase/supabase-js": "^2.8.0",
+    "nuxt-windicss": "^2.6.0",
     "pinia": "^2.0.30"
   }
 }
