@@ -40,4 +40,4 @@ We welcome contributions from the community! If you have an idea for a new featu
 
 ## 💬 Support
 
-If you have any questions or need support, please reach out to us at support@kaana.com 📧.
+If you have any questions or need support, please reach out to us at support@kaana.io 📧.
