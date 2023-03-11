@@ -32,12 +32,16 @@ To get started with Mention by Kaana, follow these steps:
 ## 🤝 Contributing
 We welcome contributions from the community! If you have an idea for a new feature or have found a bug, please open an issue in this repository. If you would like to contribute code, please fork this repository and create a pull request with your changes.
 
-### 🖊 Contributors:
+## 👨‍💻 Contributors
 
-- [AlbertIsernAlvarez](https://github.com/AlbertIsernAlvarez)
+<a href="https://github.com/KaanaOfficial/KaanaAuth/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=KaanaOfficial/KaanaAuth" />   
+</a>   
 
-> You can find TODOs from: [TODO.md](https://github.com/KaanaOfficial/Mention/blob/master/TODO.md)
+## 🖊 TO DO
+
+> You can find TODOs from: [TODO.md](https://github.com/KaanaOfficial/KaanaAuth/blob/master/TODO.md)
 
 ## 💬 Support
 
-If you have any questions or need support, please reach out to us at support@kaana.com 📧.
+If you have any questions or need support, please reach out to us at support@kaana.io 📧.

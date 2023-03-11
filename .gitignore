@@ -10,3 +10,4 @@ dist
 .nuxt-storybook
 storybook-static
 .npmrc
+package-lock.json

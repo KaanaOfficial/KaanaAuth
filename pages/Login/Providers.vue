@@ -1,5 +1,5 @@
 <template>
-    <div class="m-1 p-10 bg-white rounded-[25px] flex-1 sm:h-auto">
+    <div class="m-1 p-10 bg-white dark:bg-gray-900 rounded-[25px] flex-1 sm:h-auto">
         <div class="flex flex-col items-center">
             <img class="w-[2rem] mb-2" src="~/assets/images/logoIcon.png" alt="Kaana Logo" />
             <span class="text-2xl font-semi-bold mt-1">Sign In</span>

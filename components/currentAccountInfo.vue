@@ -11,8 +11,7 @@
                 <div class="text-gray-600">{{ email }}</div>
               </div>
               <a class="text-black rounded-full bg-white border border-black px-4 p-1 w-fit whitespace-nowrap cursor-pointer hover:bg-main-primary/10"
-                href="https://myaccount.google.com/?hl=en&authuser=0&utm_source=OGB&utm_medium=act" target="_blank"
-                rel="noopener noreferrer">Manage your Kaana Account</a>
+                href="{{ manageAccountLink }}" target="_blank" rel="noopener noreferrer">Manage your Kaana Account</a>
             </div>
           </div>
         </div>
@@ -32,7 +31,7 @@ export default {
       name: "Albert Isern Alvarez",
       email: currentUser?.email,
       manageAccountLink:
-        "https://myaccount.google.com/?hl=en&authuser=0&utm_source=OGB&utm_medium=act",
+        "https://myaccount.kaana.io/",
     };
   },
 };
